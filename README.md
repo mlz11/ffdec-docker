@@ -22,4 +22,4 @@ See the [FFDec CLI reference](https://github.com/jindrapetrik/jpexs-decompiler/w
 
 This image uses FFDec 21.0.1.
 
-An [official Dockerfile](https://www.free-decompiler.com/flash/issues/2648-add-official-dockerfile-for-headless-cli-usage) has been suggested upstream.
+An [official Dockerfile](https://www.free-decompiler.com/flash/issues/2648-add-official-dockerfile-for-headless-cli-usage) has been suggested upstream - upvote it so this image can be maintained alongside FFDec releases.
