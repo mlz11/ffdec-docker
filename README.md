@@ -2,7 +2,14 @@
 
 Headless [FFDec (JPEXS Free Flash Decompiler)](https://github.com/jindrapetrik/jpexs-decompiler) in Docker. No need to install Java or FFDec locally.
 
-## Build
+## Quick start
+
+```bash
+docker pull mlz11/ffdec
+docker run --rm -v ./input:/work/input -v ./output:/work/output mlz11/ffdec [args]
+```
+
+## Build locally
 
 ```bash
 docker build -t ffdec .
@@ -13,13 +20,13 @@ docker build -t ffdec .
 FFDec CLI is the entrypoint, so you can pass arguments directly:
 
 ```bash
-docker run --rm -v ./input:/work/input -v ./output:/work/output ffdec [args]
+docker run --rm -v ./input:/work/input -v ./output:/work/output mlz11/ffdec [args]
 ```
 
 See the [FFDec CLI reference](https://github.com/jindrapetrik/jpexs-decompiler/wiki/Commandline-arguments) for all available arguments.
 
 ## FFDec version
 
-This image uses FFDec 21.0.1.
+This image uses FFDec 25.1.2.
 
-An [official Dockerfile](https://www.free-decompiler.com/flash/issues/2648-add-official-dockerfile-for-headless-cli-usage) has been suggested upstream. You can upvote it so this image can be maintained alongside FFDec releases.
+This Dockerfile was [adopted upstream](https://github.com/jindrapetrik/jpexs-decompiler/releases/tag/nightly3440) starting with nightly build 3440.
